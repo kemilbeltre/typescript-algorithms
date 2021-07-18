@@ -1,0 +1,45 @@
+{
+  "name": "katas-and-tdd",
+  "version": "1.0.0",
+  "description": "Katas and TDD with TypeScript and Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg",
+    "format": "prettier --write .",
+    "toc": "doctoc README.md --github --title \"**Table of Contents**\""
+  },
+  "keywords": [
+    "katas",
+    "tdd",
+    "typescript",
+    "jest"
+  ],
+  "author": "Kemil Beltre",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.14.6",
+    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/plugin-proposal-private-methods": "7.14.5",
+    "@babel/preset-env": "7.14.7",
+    "@babel/preset-typescript": "7.14.5",
+    "@types/jest": "26.0.24",
+    "babel-jest": "27.0.6",
+    "doctoc": "2.0.1",
+    "husky": "7.0.1",
+    "jest": "27.0.6",
+    "lint-staged": "11.0.1",
+    "prettier": "2.3.2",
+    "ts-mockito": "2.6.1",
+    "typescript": "4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,css,md}": "prettier --write"
+  }
+}
