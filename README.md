@@ -1,8 +1,8 @@
 ![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
-# Katas and TDD
+# TypeScript Algorithms and Data Structures
 
-This a personal repository where I will uploading exercises that I do on a daily basis.
+This a personal repository where I will upload exercises that I do on a daily basis.
 
 ## License
 
